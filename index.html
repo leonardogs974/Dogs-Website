@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog's Site</title>
+  <link rel="icon" href="source/logo.png" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+  <!-- CSS -->
+  <style>
+    html,
+    body {
+      scroll-behavior: smooth;
+    }
+
+    .nav-link:hover {
+      color: white
+    }
+
+    .card:hover {
+      transform: translate(0px, -10px);
+      transition: transform 0.5s ease;
+    }
+
+    .btnUp {
+      position: fixed;
+      right: 30px;
+      bottom: 30px;
+      z-index: 2;
+      background-color: #8ecae6;
+      border-radius: 50%;
+    }
+
+    .btnUp img{
+      width: 50px;
+      rotate: -25deg;
+    }
+
+    .btnUp a {
+      text-decoration: none;
+      color: white;
+      font-size: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btnUp:hover {
+      background-color: #457b9d;
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="btnUp" data-aos="fade-up" data-aos-delay="1000">
+    <a href="#">
+      <img src="source/logo.png" alt="icon">
+    </a>
+  </div>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #a8dadc">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img src="source/logo.png" alt="Logo" style="width: 50px;"> Dog's Site</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ciri">Ciri</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#jenis">Jenis</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Penjelasan Tentang Anjing -->
+    <section class="my-3 py-5 px-4 rounded container" style="background-color: #457b9d;" id="beranda">
+      <div class="row">
+        <div class="col-3">
+          <img src="source/dog1.png" alt="Gambar 1" class="img-thumbnail">
+        </div>
+        <div class="col text-white">
+          <h3>Anjing</h3>
+          <p><b>Anjing domestik</b> atau <b>anjing</b> (Canis lupus familiaris) adalah hewan mamalia yang telah mengalami domestikasi dari serigala sejak 15.000 tahun yang lalu, bahkan kemungkinan sudah sejak 100.000 tahun yang lalu berdasarkan bukti genetik berupa penemuan fosil dan tes DNA.</p>
+          <Ilmu>Anjing telah berkembang menjadi ratusan ras dengan berbagai macam variasi. Warna rambut anjing bisa beraneka ragam, mulai dari putih sampai hitam, juga merah, abu-abu (sering disebut "biru"), dan cokelat. Selain itu, anjing memiliki berbagai jenis rambut. Rambut anjing bisa lurus atau keriting, dan bertekstur kasar hingga lembut seperti benang wol. Ilmu pengetahuan yang mempelajari segala hal mengenai anjing dinamakan dengan <b>kinologi</b></p>
+            <a class="btn btn-outline-light" href="https://id.wikipedia.org/wiki/Anjing" role="button">Baca Selengkapnya...</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ciri-Ciri Anjing -->
+    <section class="my-2 py-5" id="ciri" style="background-color: #023047; color: #ffffff">
+      <div class="container">
+        <h3 class="mb-3">Ciri-Ciri Anjing</h3>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#penglihatan" type="button" role="tab" aria-controls="penglihatan" aria-selected="true">Indra Penglihatan</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#pendengaran" type="button" role="tab" aria-controls="pendengaran" aria-selected="false">Indra pendengaran</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#penciuman" type="button" role="tab" aria-controls="penciuman" aria-selected="false">Indra penciuman</button>
+          </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="penglihatan" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+            <p>Anjing dulunya disangka dikromatis, sehingga bisa disebut buta warna menurut standar manusia. Namun, penelitian selanjutnya justru menunjukkan anjing bisa melihat beberapa warna, walaupun tidak seperti yang bisa dilihat manusia.</p>
+            <p>Bagi anjing, warna merupakan sinyal subliminal yang ditangkap untuk membedakan bentuk dari objek yang saling tumpang-tindih, dan bukan warna pada benda yang bisa langsung dibedakan anjing. Menurut penelitian, anjing bisa melihat berbagai nuansa warna kuning, ungu atau violet, ultra violet.</p>
+            <p>Lensa mata anjing lebih datar dibandingkan dengan lensa mata manusia, sehingga anjing kurang bisa melihat secara detail dibandingkan manusia. Sebaliknya, mata anjing lebih sensitif terhadap cahaya dan gerakan dibandingkan mata manusia. Beberapa anjing ras, memiliki bidang pandangan sampai 270°. Sebagai perbandingan, manusia hanya mempunyai bidang pandangan 180°. Bidang pandangan anjing ras dengan kepala lebar dan kedua mata di depan sebenarnya hampir sama dengan manusia, hanya sekitar 180°.</p>
+          </div>
+          <div class="tab-pane fade" id="pendengaran" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <p>Anjing bisa mendengar suara frekuensi rendah 16 Hz hingga 70 KHz., Jumlah lebar frekuensi ini termasuk cukup bagus, namun masih kalah dari pendengaran kucing.[10] Selain itu, anjing bisa menggerak-gerakkan daun telinga agar cepat bisa menentukan lokasi sumber suara yang sebenarnya. Lebih dari 18 otot pada daun telinga memungkinkan anjing memiringkan, memutar, menidurkan, atau menegakkan daun telinga.</p>
+            <p>Anjing mampu menentukan sumber suara lebih cepat dari manusia, sekaligus bisa mendengar suara yang sumbernya empat kali lebih jauh yang dapat didengar manusia. Anjing dengan daun telinga berbentuk alami (tegak seperti daun telinga serigala) biasanya memiliki pendengaran yang lebih baik daripada anjing berdaun telinga jatuh seperti terdapat pada banyak spesies hasil domestikasi.</p>
+          </div>
+          <div class="tab-pane fade" id="penciuman" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+            <p>Anjing memiliki hampir 220 juta sel penciuman yang sensitif terhadap bau. Luasnya kira-kira selebar sapu tangan, sangat luas bila dibandingkan sel penciuman yang dimiliki manusia. Sebagai pembanding, manusia hanya memiliki 5 juta sel penciuman yang menempati luas selebar prangko. Beberapa jenis anjing ras bahkan sengaja dibiakkan agar lahir anak anjing dengan indra penciuman yang lebih bagus. Mekanisme pengumpulan informasi di otak anjing berdasarkan partikel-partikel bau yang berhasil diendus belum diketahui secara jelas. Menurut hasil penelitian, anjing dapat membedakan dua jenis bau: partikel bau di udara yang menyebar dari orang atau benda, dan partikel bau di tanah yang masih bisa dideteksi setelah beberapa lama. Karakteristik dua jenis partikel bau kelihatannya cukup berbeda. Partikel bau yang ada di udara mudah hilang, tetapi mungkin begitu jelas dan tidak bercampur bau-bauan yang lain, sedangkan partikel bau di tanah relatif lebih permanen. Anjing pelacak harus dilatih secara berulang-ulang dan berhati-hati, karena bau yang melekat di tanah mudah tercemar dengan bau-bauan yang lain.</p>
+            <p>Pelatih anjing pelacak sudah mengerti bahwa anjing tidak mungkin diajar untuk melacak bau-bauan di atas kemampuan alaminya yang dimiliki sejak lahir. Anjing hanya dapat dimotivasi sebaik-baiknya dan diajar agar bisa berkonsentrasi pada jejak bau yang utama. Anjing pelacak yang terlatih harus bisa mengabaikan berbagai jejak bau yang lain. Anjing yang tidak terlatih biasanya senang sekali mengendus berbagai macam bau selain jejak bau yang diperintahkan. Sewaktu melakukan pekerjaan yang meletihkan bagi anjing pelacak (misalnya mencari barang selundupan di atas kapal), anjing harus dimotivasi agar mau kerja keras dalam jangka waktu yang lama.</p>
+            <p>Karena anjing memiliki indra penciuman yang sangat kuat, anjing dapat menjadi alternatif penapis tumor. Ada anjing yang bisa membedakan pasien dengan kanker tiroid dan tidak melalui air seni pasien dengan tingkat akurasi hingga 88 persen. Tetapi hal ini tidak dapat menggantikan biopsi untuk penegakan diagnosis dengan tingkat akurasi 100 persen, dan menggunakan anjing juga tidak praktis.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Jenis-Jenis Anjing -->
+    <section class="mt-3 mb-5 container" id="jenis">
+      <h3 class="mb-3">Jenis-Jenis Anjing</h3>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
+            <img src="source/Anjing1.jpg" class="card-img-top" alt="Anjing 1" style="height: 240px">
+            <div class="card-body">
+              <h5 class="card-title">Anjing Gembala Jerman</h5>
+              <p class="card-text">Anjing Gembala Jerman adalah salah satu ras murni anjing yang populer. Ukurannya besar, dikenal cerdas namun penurut. Anjing ini relatif tidak memiliki variasi warna, yaitu coklat dengan variasi hitam...</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://id.wikipedia.org/wiki/Anjing_gembala_jerman" role="button" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="source/Anjing2.jpg" class="card-img-top" alt="Anjing 2" style="height: 240px">
+            <div class="card-body">
+              <h5 class="card-title">Golden Retriever</h5>
+              <p class="card-text">TGolden Retriever adalah anjing trah yang mulanya dibiakkan sebagai anjing pemburu untuk mengambil burung hasil buruan yang sudah ditembak...</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://id.wikipedia.org/wiki/Golden_Retriever" role="button" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="source/Anjing3.jpg" class="card-img-top" alt="Anjing 3" style="height: 240px">
+            <div class="card-body">
+              <h5 class="card-title">Pudel</h5>
+              <p class="card-text">Pudel adalah anjing dari kelompok non-sporting atau utility yang berasal dari Prancis. Ada beberapa jenis pudel, misalnya: pudel standar, miniatur dan mainan...</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://id.wikipedia.org/wiki/Pudel" role="button" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="source/Anjing4.jpg" class="card-img-top" alt="Anjing 4" style="height: 240px">
+            <div class="card-body">
+              <h5 class="card-title">Chihuahua</h5>
+              <p class="card-text">Chihuahua pada dasarnya adalah ras anjing yang penyayang, sering menggonggong dan suka mencari perhatian pada pemiliknya...</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://id.wikipedia.org/wiki/Chihuahua_(anjing)" role="button" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="source/Anjing5.jpg" class="card-img-top" alt="Anjing 5" style="height: 240px">
+            <div class="card-body">
+              <h5 class="card-title">Shih-Tzu</h5>
+              <p class="card-text">Shih-Tzu adalah salah satu ras anjing tertua yang berasal dari Tiongkok.[1] Anjing ras ini memiliki bulu yang panjang dengan berbagai warna dan pola pada bulunya...</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://id.wikipedia.org/wiki/Shih-Tzu" role="button" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+            <img src="source/Anjing6.jpg" class="card-img-top" alt="Anjing 6" style="height: 240px">
+            <div class="card-body">
+              <h5 class="card-title">Shiba Inu</h5>
+              <p class="card-text">CShiba Inu (柴犬, Anjing Shiba) adalah anjing asli Jepang yang sudah ada sejak zaman kuno. Shiba Inu merupakan anjing ras paling populer di Jepang...</p>
+            </div>
+            <div class="card-footer">
+              <a class="btn btn-outline-dark" href="https://id.wikipedia.org/wiki/Shiba_Inu" role="button" target="_blank">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-3 text-center fw-bold" style="background-color: #a8dadc">
+    &copy;2023 | Leonardo GS
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
